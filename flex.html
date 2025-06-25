@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display:grid;
+            grid-template-columns: auto auto auto ;
+            grid-template-rows: auto ;
+            flex-direction:row;
+            background-color: rgb(8, 204, 80);
+            color:black;
+            flex-wrap:wrap;
+            gap:50px;
+            justify-content:center;
+            flex-flow:column wrap;align-items: center;
+
+        }
+        .flex1{
+            display:flex;
+            border:solid;
+            border-color: black;
+            border-radius:5px;
+            height:55px;
+            width: 55px;
+            background-color: blue;
+            align-items: center;
+           justify-content: space-around;
+
+        }
+
+        .flex>.flex1{
+            background-color: rgb(165, 42, 159);
+        }
+        .flex>.f{
+        
+            display:flex;
+            border:solid;
+            border-color: black;
+            border-radius:5px;
+            height:55px;
+            width: 55px;
+            background-color: rgb(0, 255, 221);
+            align-items: center;
+           justify-content: space-around
+
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+    
+        <div class ="f">1</div>
+        <div class="f">2</div>
+        <div class="flex1">3</div>
+        <div class="flex1">4</div>
+    </div>
+</body>
+</html>
